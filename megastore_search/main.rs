@@ -82,7 +82,7 @@ pub fn load_products_from_csv(path: &str) -> io::Result<Vec<Product>> {
 }
 
 fn main() -> io::Result<()> {
-    // Arquivo de exemplo: data/products.csv (forneça seu CSV)
+    // Arquivo de exemplo: data/products.csv
     let sample = "data/products.csv";
     if Path::new(sample).exists() {
         let products = load_products_from_csv(sample)?;
